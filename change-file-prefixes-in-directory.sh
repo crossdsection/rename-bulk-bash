@@ -13,9 +13,11 @@ echo $delimeter;
 for fileName in $filenames; 
 do     
 	echo "> [$fileName]";
+	#Change FileName
 	result="$($fileName/$delimeter/$newPrefix//)";
 	echo "$result";
 	newFileName="${string/$delimeter/$newPrefix}";
 	echo $newFileName;
+	# mv oldFilename newFilename
 done
 
